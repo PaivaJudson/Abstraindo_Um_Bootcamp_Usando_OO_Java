@@ -1,3 +1,4 @@
+import judson.paiva.desafio.dominio.Conteudo;
 import judson.paiva.desafio.dominio.Curso;
 import judson.paiva.desafio.dominio.Mentoria;
 
@@ -14,10 +15,15 @@ public class Main {
         Mentoria mentoria1 = new Mentoria("Git e Github", "Aprenda a usar o Git e o Github", LocalDate.now());
         Mentoria mentoria2 = new Mentoria("Flutter", "Aprenda a tecnologia Flutter", LocalDate.now());
 
+        Conteudo conteudo1 = new Curso("Introdução a Engenharia","", 40);
+        Conteudo conteudo2 = new Mentoria("Flutter", "Aprenda a tecnologia Flutter", LocalDate.now());
+
         System.out.println(curso1);
         System.out.println(curso2);
         System.out.println(mentoria1);
         System.out.println(mentoria2);
+        System.out.println(conteudo1 +" tem como preço = "+conteudo1.calacularXP());
+        System.out.println(conteudo2);
 
     }
 
